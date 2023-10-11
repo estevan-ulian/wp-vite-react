@@ -1,0 +1,23 @@
+# Logs
+app/wp-vite-react-app/logs
+app/wp-vite-react-app/*.log
+app/wp-vite-react-app/npm-debug.log*
+app/wp-vite-react-app/yarn-debug.log*
+app/wp-vite-react-app/yarn-error.log*
+app/wp-vite-react-app/pnpm-debug.log*
+app/wp-vite-react-app/lerna-debug.log*
+
+app/build
+app/wp-vite-react-app/node_modules
+app/wp-vite-react-app/*.local
+
+# Editor directories and files
+app/wp-vite-react-app/.vscode/*
+app/wp-vite-react-app/!.vscode/extensions.json
+app/wp-vite-react-app/.idea
+app/wp-vite-react-app/.DS_Store
+app/wp-vite-react-app/*.suo
+app/wp-vite-react-app/*.ntvs*
+app/wp-vite-react-app/*.njsproj
+app/wp-vite-react-app/*.sln
+app/wp-vite-react-app/*.sw?
