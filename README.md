@@ -12,6 +12,8 @@ Utilize `npm run dev` durante o desenvolvimento.
 
 Execute `npm run build` para gerar a build do projeto.
 
+As imagens devem estar localizadas na pasta `public` e os imports devem ser feitos utilizando a variável `baseUrl` localizada no arquivo `src/wp-config/config.ts`. Isto garantirá que elas sejam carregadas corretamente no site Wordpress.
+
 ## Instalação
 
 Comprima os arquivos da raíz e instale o plugin manualmente no site Wordpress com o `wp-vite-react.zip` gerado.
