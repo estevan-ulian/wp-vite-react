@@ -2,7 +2,7 @@
 /**
  * Plugin Name:  Wordpress Vite React Plugin
  * Description:  Um plugin WordPress com tecnologia Vite e ReactJS. Utilize o shortcode <code>[wp_vite_react]</code> para exibir o app em qualquer local do site.
- * Version:      1.0.0
+ * Version:      1.0.1
  * Author:       Estevan Ulian
  * Text Domain:  wp-vite-react
  * Domain Path:  /languages/
@@ -15,6 +15,12 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 add_shortcode( 'wp_vite_react', 'wp_vite_react_shortcode' );
 
 function wp_vite_react_shortcode () {
+    $elementor_edit_mode = \Elementor\Plugin::$instance->editor->is_edit_mode();
+
+    if ($elementor_edit_mode) {
+        return '';
+    }
+
     wp_react_app_load_scripts();
     ob_start(); 
     ?>
